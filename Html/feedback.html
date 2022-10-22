@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Feed back</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav>  
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">FOOD<span>GUARD</span></label>
+      <ul>
+        <li><a class="" href="../html/donatefood.html">HOME</a></li>
+        <li><a href="../html/about.html">ABOUT US</a></li>
+        <li><a href="../html/contact.html">CONTACT US</a></li>
+        <li><a href="../html/feedback.html">FEEDBACK</a></li>
+      </ul>
+    </nav>
+    <div class="max-width"> 
+      <h2 class="title">feedback</h2>
+    </div>
+    <div class="wrapper">
+      <div class="like">
+        <i onclick="count()" class="fas fa-heart icon"></i>
+        <br>
+        <input id="likeCount" type="number" value="0">
+      </div>
+      <div class="dislike">
+        <i onclick="count1()" class="fas fa-heart-broken icon"></i>
+        <br>
+        <input id="dislikeCount" type="number" value="0">
+      </div>
+      <div class="subscribe">
+        <button onclick="fun()">send</button>
+      </div>
+    </div>
+ <script type="text/javascript" src="app.js"></script>
+ <script  class="alert.js"></script>
+  </body>
+  <style> 
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+  body{ 
+    width: 100%;
+    overflow: hidden;
+    background:rgb(13, 204, 13);
+  }
+  nav{
+  /* background: yellow; */
+  height: 80px;
+  width: 100%;
+  animation: nav 2s ease-in-out;
+  z-index: 999;
+}
+::-webkit-scrollbar{
+   display:none;
+  } 
+  
+@keyframes nav{
+    0%{
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+  }
+label.logo{
+  color: red;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 10px;
+  font-weight: bold;
+  z-index: 888;
+}
+label.logo span{
+  color: blue;
+  background:rgb(13, 204, 13);
+  border-radius: 30px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: blue;
+  font-size: 20px;
+  padding: 0.6px 1px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: black;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: blue;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  .checkbtn{
+    font-size: 20px;
+   
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:rgb(13, 204, 13);
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index:55;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: black;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+ .max-width{
+ display: flex;
+ justify-content: center;
+ font-size: 30px;
+ font-weight: 900;
+ color: blue;
+ }
+
+
+  .wrapper{
+    margin: 100px 15%;
+    width: 70%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 2fr;
+    background: blue;
+    box-shadow: 12px 12px 24px white,
+                -12px -12px 24px white;
+    border-radius: 30px;
+  }
+  .like,.dislike,.subscribe{
+    color: blue;
+    display: grid;
+    place-items : center;
+  }
+  .icon{
+    margin-top: 70px;
+    font-size: 80px;
+    color: rgb(13, 204, 13);
+    cursor: pointer;
+    text-shadow: 5px 8px 15px white;
+    transition: .5s;
+  }
+  .icon:hover{
+    color: red;
+    transform: scale(1.2);
+  }
+  input{
+    margin-top: -100px;
+    margin-left: 15px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    background: none;
+    font-size: 30px;
+    font-weight: 800;
+    pointer-events: none;
+    color: #0086b3;
+    text-shadow: 2px 2px 3px blue;
+  }
+  button{
+    /* background:yellow; */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color:blue;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 15px 35px;
+    border-radius: 35px;
+    transition: 0.5s;
+    /* box-shadow: 12px 12px 24px yellow,
+                -12px -12px 24px yellow; */
+  }
+  button:hover{
+    color: white;
+    background: #ba0015;
+    transform: scale(1.05);
+  }
+
+  </style>
+  <script>
+    function fun(){
+      alert("Your feedback recieved successfully")
+    }
+    var likeCount = document.querySelector('#likeCount');
+    var dislikeCount = document.querySelector('#dislikeCount');
+
+   function count(){
+  likeCount.value = parseInt(likeCount.value) +1 ;
+}
+
+function count1(){                                                                            
+  dislikeCount.value = parseInt(dislikeCount.value) + 1;
+}
+  </script>
+</html>
+
+ 

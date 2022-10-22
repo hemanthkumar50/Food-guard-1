@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.img{
+  background-position: center;
+  background-image:url("https://media.istockphoto.com/photos/hands-of-cook-photographing-mexican-tacos-picture-id1241881284?b=1&k=20&m=1241881284&s=170667a&w=0&h=3FPviGXBR4QYBbfe2TdKNXTNIvRfNX3UNyNlihvonrg=");
+  background-position: center;
+  background-size: cover;
+  height: 690px;
+}
+::-webkit-scrollbar{
+  display:none;
+ } 
+ 
+
+
+nav{
+  /* background: yellow; */
+  height: 80px;
+  width: 100%;
+  animation: nav 2s ease-in-out;
+  z-index: 999;
+  
+}
+@keyframes nav{
+  0%{
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+::-webkit-scrollbar{
+  display:none;
+ } 
+ 
+label.logo{
+  color: red;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 10px;
+  font-weight: bold;
+  z-index: 888;
+}
+label.logo span{
+  color: blue;
+  background:rgb(13, 204, 13);
+  border-radius: 30px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: blue;
+  font-size: 20px;
+  font-weight:900;
+  padding: 0.6px 1px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: rgb(13, 204, 13);
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: blue;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 20px;
+  }
+  .checkbtn{
+    font-size: 30px;
+   
+  }
+  nav ul li a{
+    font-size: 26px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:rgb(13, 204, 13);
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index:55;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: black;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  label.logo{
+    font-size: 20px;
+   
+  }
+  .checkbtn{
+    font-size: 20px;
+   
+  }
+ 
+}
+
+
+.f1{
+display: flex;
+justify-content: center;
+position: relative;
+top: 10px;
+}
+.f1 input{
+background-color: rgb(26, 26, 141);
+border: 2px solid red;
+font-size: 30px;
+border-radius: 10px;
+padding: 5px 10px;
+}
+
+.f1 h1{
+color:wheat;
+background: red;
+border-radius: 10px;
+margin: 20px 20px;
+font-size: 50px;
+
+}
+.f1 .name1{
+margin: 20px 20px;
+font-size: 30px;
+
+}
+.f1 .address1{
+margin: 20px 20px;
+font-size: 30px;
+
+}
+.f1 .food1{
+margin: 20px 20px;
+font-size: 30px;
+
+}
+.f1 .Quantity1{
+margin: 20px 20px;
+font-size: 30px;
+} 
+.f1 .all{
+margin: 20px 20px;
+font-size: 30px;
+
+}
+.f1 .btn{
+margin: 30px 10px;
+position: relative;
+left: 30px;
+font-size: 20px;
+
+
+}
+.f1 .btn button{
+  margin: 30px 0px;
+  font-size: 20px;
+  color: antiquewhite;
+  background-color: blue;
+  padding: 6px 5px;
+  border-radius: 10px;
+}
+
+ 
+
+
+.f1 .btn a{
+margin: 0px 5px;
+font-size: 20px;
+color:rgb(13, 204, 13);
+background-color: red;
+padding: 6px 5px;
+border-radius: 10px;
+}
+.f1 .btn a:hover{
+color:red;
+background-color:blue;
+}
+
+
+@media (max-width: 468px){
+.f1 h1{
+
+  font-size: 30px;
+
+}
+.f1 input{
+
+  font-size: 20px;
+ 
+}
+.f1 .all{
+  font-size: 20px;
+  
+}
+
+}
+@media (max-width: 952px){
+  .f1 h1{
+    font-size: 30px;
+  
+  }
+  .f1 input{
+
+    font-size: 20px;
+   
+  }
+  .f1 .all{
+    font-size: 20px;
+    
+  }
+}

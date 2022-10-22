@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.landing{
+    background: url("https://i.pinimg.com/736x/94/6f/03/946f032edc559c3d235c2d648fcabc09.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;   
+    height: 100%;
+    width:100%;
+}
+
+nav{
+  /* background: yellow; */
+  animation: nav 2s ease-in-out;
+  z-index: 999;
+  height: 80px;
+  width: 100%;
+}
+@keyframes nav{
+  0%{
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+label.logo{
+  color: red;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 10px;
+  font-weight: bold;
+  z-index: 888;
+}
+label.logo span{
+  color: blue;
+  background:rgb(13, 204, 13);
+  border-radius: 30px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: blue;
+  font-size: 20px;
+  padding: 0.6px 1px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: rgb(13, 204, 13);
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: blue;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  .checkbtn{
+    font-size: 20px;
+   
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  .nav{
+    background:rgb(13, 204, 13);
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:rgb(13, 204, 13);
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index:55;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: black;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+
+
+
+/* donate page */
+::-webkit-scrollbar{
+  display:none;
+ } 
+ 
+.line2{
+    display: flex;
+    justify-content: center;
+    margin: 0px 20px;
+    line-height: 90px;
+    font-size: 40px;
+    color:crimson;
+    font-weight: 900;
+    font: bolder;
+
+}  
+.btn{
+  display: flex;
+  justify-content: space-evenly;
+  
+ 
+}
+.btn a{
+    display: flex;
+    background:rgb(13, 204, 13); 
+    font: bolder;
+    border: 2px solid blue;
+    font-size: 40px;
+    margin: 70px 20px;
+    padding: 5px 10px;
+    color: white;
+    font-weight: 900;
+    border-radius: 10px;
+    transition: 1s;
+}
+.btn a:hover{
+    background: none;
+    color:red;
+
+}
+
+.line3{
+    display: flex;
+    justify-content: center;
+    line-height: 120px;
+    font-weight:bolder;
+    font-size: 30px;
+    align-items: center;
+    font-weight: 900;
+    color:blue;
+    font: bolder;
+   
+
+}
+.keep{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 10px;
+  margin: 60px;
+  color: rgb(14, 226, 78);
+  font-size: 25px;
+  font-weight: 900;
+}
+/* .save{
+  display: flex;
+  justify-content: center;
+  line-height: 120px;
+  color:rgb(14, 226, 78);
+  font: bolder;
+  font-weight: 900;
+  font-size: 20px;
+ 
+} */
+
+.landing .head{
+    font-size: 4.5em;
+}
+.landing .line2{
+    word-spacing: 15px;
+    font-size: 3em ;
+    font-weight: 900;
+}
+
+
+.button{
+    display: flex;
+    position: relative;
+    top: 50px;
+}
+.don{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  position: relative;
+  left: -30px;
+}
+@media (max-width: 546px){
+  .line2{ 
+    font-size: 20px;
+    font-weight: 900;
+    font: bolder;
+
+}  
+
+.btn a{
+   
+    font-size: 20px;
+ 
+}
+
+
+.line3{
+    font-size: 15px;
+    font: bolder;
+   
+
+}
+.keep{
+  font-size: 10px;
+}
+.save{
+  font-size: 15px;
+ 
+}
+
+.landing .head{
+    font-size: 20px;
+}
+.landing .line2{
+  
+    font-size: 20px;
+}
+
+
+
+} 

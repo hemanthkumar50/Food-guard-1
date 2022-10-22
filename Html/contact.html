@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+  <body>
+    <nav>  
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">FOOD<span>GUARD</span></label>
+      <ul>
+        <li><a class="" href="../html/donatefood.html">HOME</a></li>
+        <li><a href="../html/about.html">ABOUT US</a></li>
+        <li><a href="../html/contact.html">CONTACT Us</a></li>
+        <li><a href="../html/feedback.html">FEEDBACK</a></li>
+      </ul>
+    </nav>
+    <section class="contact" id="mycontact">
+      <div class="max-width"> 
+       <h2 class="title">Contact us</h2>
+      </div>
+      <!-- <div class="mailto">
+        <h1>MAIL</h1>
+        </div>
+        <div class="mail">   
+        </div> -->
+          <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100055162656597"><i class="fab fa-facebook-f">   Facebook</i></a>
+            <a href="https://instagram.com/crazycricketer_abi50?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram">   Instagram</i></a>
+            <a href="https://www.linkedin.com/in/hemanth-kumar-bab982252"><i class="fab fa-linkedin-in">   linked-in</i></a>
+            <a href="https://youtube.com/channel/UCblwqu1Ox5LusOuusEE_TKA"><i class="fab fa-youtube">   Youtube</i></a>
+            <a href="mailto"><h2>Mail</h2></a>
+          </div>
+    </section> 
+
+  
+ <script type="text/javascript" src="app.js"></script>
+ <script  class="alert.js"></script>
+  </body>
+  <style> 
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+  body{ 
+    width: 100%;
+    overflow: hidden;
+    background:rgb(13, 204, 13);
+  }
+  nav{
+  /* background: yellow; */
+  height: 80px;
+  width: 100%;
+  animation: nav 2s ease-in-out;
+  z-index: 999;
+}
+@keyframes nav{
+    0%{
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+  }
+::-webkit-scrollbar{
+   display:none;
+  } 
+  
+label.logo{
+  color: red;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 10px;
+  font-weight: bold;
+  z-index: 888;
+}
+label.logo span{
+  color: blue;
+  background:rgb(13, 204, 13);
+  border-radius: 30px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: blue;
+  font-size: 20px;
+  padding: 0.6px 1px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  /* background: black; */
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: blue;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  .checkbtn{
+    font-size: 20px;
+   
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:rgb(13, 204, 13);
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index:55;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: black;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+/* contact style */
+
+.contact .title{
+  color: white;
+  position: relative;
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  margin:30px 0px;
+
+} 
+ 
+ .contact .about-content{ 
+ display:flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: space-between;
+ animation: nav 2s ease-in-out;
+   z-index: 999;
+}
+@keyframes contact{
+  0%{
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+ 
+
+.contact4{
+  margin: 10px 0px;
+  
+ }
+
+
+.social-icons{
+   margin: 20px 0px;
+
+}
+ .social-icons a {
+  display: flex;
+  justify-content: center;
+  padding: 10px 30px;
+  font-size: 50px;
+ 
+} 
+ .social-icons .fa-facebook{
+  margin-top: 20px;
+  color: blueviolet;
+
+}
+
+.social-icons .fa-whatsapp{
+  margin-top: 20px;
+  color: rgb(33, 230, 33);
+  transition: 0.3s;
+
+}
+.social-icons .fa-instagram{
+  margin-top: 20px;
+  color: rgb(192, 43, 93);
+  transition: 0.3s;
+
+}
+.social-icons .fa-linkedin-in{
+  margin-top: 20px;
+  color: blue;
+  transition: 0.3s;
+
+}
+.social-icons .fa-youtube{
+  margin-top: 20px;
+  color: red;
+  transition: 0.3s;
+
+}
+.social-icons a i:hover {
+   color: white;
+  
+} 
+@media (max-width:417px){
+ 
+  .social-icons a {
+    margin-top: 10px;
+    font-size: 30px;
+  
+  } 
+  .contact .title{
+    font-size: 35px;
+    font-weight: 500;
+  
+  }
+ 
+ 
+}
+@media (max-width:844px){
+ 
+
+}
+@media (max-width:291px){
+
+  .social-icons a {
+    font-size: 22px;
+    font-weight: 900;
+  
+  } 
+  .contact .title{
+   
+    font-size: 30px;
+    font-weight: 600;
+  
+  }
+}
+@media (max-width:291px){
+  .contact .title{
+   
+    font-size: 30px;
+    font-weight: 600;
+  
+  } 
+  
+  }
+  /* .social-icons  .mailto h2{
+   color: blue;
+  
+} 
+.social-icons  .mailto h2:hover{
+   color: red;
+  
+} */
+
+  </style>
+ 
+</html>
+
+ 
+    
+

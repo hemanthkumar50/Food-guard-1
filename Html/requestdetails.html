@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FOOD GUARD</title>
+  <link rel="stylesheet" href="../css/requestdetails.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <script rel="stylesheet" href="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <script rel="stylesheet" href="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body>
+  <div class="img">
+    <nav>  
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">FOOD<span>GUARD</span></label>
+      <ul>
+        <li><a class="" href="../html/donatefood.html">HOME</a></li>
+        <li><a href="../html/about.html">ABOUT US</a></li>
+        <li><a href="../html/contact.html">CONTACT US</a></li>
+        <li><a href="../html/feedback.html">FEEDBACK</a></li>
+    </nav>
+  <div class="f1"> 
+      
+        <form action="foodguard3.html" methods="post">
+          <div>  
+            <h1><span class="request">For requesting</span></h1>
+          </div>
+           <!-- <div class="inputs">
+             <div class="detail1"> -->
+            <div class="name1">
+              <!-- <label for="username">USER NAME</label> -->
+              <input class="name" type="text" name="username" id="username" placeholder="User name" maxlength=20 required>
+            </div>
+            <div class="address1" >
+            <!-- <label for="Address">ADDRESS</label> -->
+            <input class="address" type="text" name="location" id="" placeholder="Location" required>
+            </div>
+               <!-- <div class="no"> -->
+                <!-- <input class="mobileno" type="number" name="" id="mobileno" placeholder="MOBILE NUMBER" maxlength="11" required> -->
+            <!-- </div> -->
+            <div class="food1">
+              <!-- <label for="Fooddetails">FOOD DETAILS</label> -->
+              <input class="food" type="text" id="Fooddetails" placeholder="Food name"  minlength="3" required>
+            </div>
+               <div class="Quantity1">
+            <!-- <label for="username">Quantity</label> -->
+                <input class="Quantity" type="number" name="Food quantity" id="" placeholder="Food quantity" minlength=1 required>
+               </div>
+            <div class="all">
+            
+                <!-- <label for="Contact no">CONTACT NO</label> -->
+                <input class="contactno" type="contactno" id="Contactno" placeholder="Contact no"  maxlength="11" required>
+            </div> 
+            <div class="btn">
+              <a href="../html/donatefood.html" class="PREVIEW">PREVIEW</a>
+              <a href="../html/req.html">Next</a>
+              <!-- <a href="../html/foodguard3.html" class="NEXT">NEXT</a> -->
+              <button type="reset">reset</button>
+             
+            </div>   
+        </form>
+  </div>
+  <script> 
+    var typed = new Typed(".request", {
+    strings : ["Please","Please","Fill","This","Details","For requesting"],
+    typespeed:100,
+    backspeed:100,
+    loop:true
+  });
+  </script>
+            
+       
+  </img>  
+</body>
+</html>
+

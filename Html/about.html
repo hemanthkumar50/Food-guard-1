@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Document</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins" , sans-serif;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+   
+ background:rgb(13, 204, 13);  
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+}   
+nav{
+   position: fixed; 
+   height: 70px;
+   width: 100%;
+   animation: nav 2s ease-in-out;
+   z-index: 999;
+}
+@keyframes nav{
+  0%{
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+.logo{
+  color:red;
+  position: fixed;
+  font-size: 40px;
+  line-height: 60px;
+  padding: 0 20px;
+  font-weight: bold;
+}
+.logo span{
+  color:blue;
+  background:rgb(13, 204, 13);
+  font-size: 30px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: blue;
+  font-size: 20px;
+  padding: 0.6px 1px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background:black ;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 50px;
+  color: blue;
+  float: right;
+  line-height: 60px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+ 
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+
+  .checkbtn{
+    display: block;
+  }
+  label.logo{
+    font-size: 25px;
+    padding-left: 50px;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:rgb(13, 204, 13);
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 999;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color:black;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  .logo span{
+    font-size: 18px;
+   
+  }
+  .checkbtn{
+    font-size: 15px;
+   
+  }
+}
+ 
+
+
+  ::-webkit-scrollbar{
+   display:none;
+  } 
+  
+  .about .title{
+  color:rgb(250, 183, 15);
+  position: relative;
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 70px;
+  /* margin:40px 0px; */
+  
+  
+  }
+
+  
+  
+  .about .about-content{ 
+   margin: 0px 50px;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  animation: nav 2s ease-in-out;
+    z-index: 999;
+  }
+
+
+
+  .about .about-content .left .about-content{
+   border-radius:60%;
+   align-items: center;
+   margin: 15px 0px;
+   height: 60vh;
+   width: 60vh;
+   object-fit: cover;
+   
+  }
+  
+  .about .about-content .right{
+  color: white;
+  width:60%;
+  }
+  
+  .about .about-content .right .text{
+  padding-bottom: 30px;
+  margin: 5px 10px;
+  font-size:25px;
+  font-weight: 600;
+  color:red;
+  }
+  .about .about-content .right .text span{
+ 
+  color:blue;
+  }
+  .about .about-content .right p{
+    border-radius: 10px;
+    padding: 1px 10px;
+    font-size:17px;
+    color:whitesmoke;
+    font-weight: 600;
+    font: bolder;
+  
+  }
+  .about .about-content .right a{
+  display:inline-block;
+  padding: 0px 5px;
+  align-items: space-between;
+  margin: 40px 10px;
+  background:red;
+  color: white;
+  font-weight: 400;
+  font-size: 25px;
+  border-radius: 6px;
+  border:3px solid red;
+  transition: all 0.3s ease;
+  }
+  .about .about-content .right a:hover{
+  color:red;
+  background: none;
+  }
+  .column .right{
+    line-height: 10px;
+  }
+  
+    
+  
+  /* about responsive */
+  
+   @media(max-width:1300px){
+  .about .about-content .left .about-content{
+    width: 100%;
+    height: 100%;
+  }
+  .about .about-content .right{
+    width: 100%;
+  }
+  .about .title{
+    
+   font-size: 30px;
+   font-weight: 600;   
+  }
+  } 
+  @media (max-width:417px){
+   .about .about-content .right a{
+     font-size: 15px;
+     font-weight: 300;
+   }
+   .about .max-width h2{
+     font-size: 30px;
+     font-weight: 500;
+    }   
+    .about .about-content .right .text{
+   
+     font-size:24px;
+     font-weight: 300;
+    }
+    .about .about-content .right .text span{
+     font-size: 28px;
+    }
+    .about .about-content .right p{
+     font-size:18px;
+     
+     
+    }
+  }
+  
+  @media (max-width:291px){
+   .about .title{
+    
+     font-size: 30px;
+     font-weight: 600;   
+    }
+  } 
+ 
+  
+  
+  
+  
+</style>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">FOOD<span>GUARD</span></label>
+        <ul>
+          <li><a href="../Html/donatefood.html">HOME</a></li>
+          <li><a href="../html/about.html">ABOUT US</a></li>
+          <li><a href="../html/contact.html">CONTACT US</a></li>
+          <li><a href="../html/feedback.html">FEEDBACK</a></li>      
+        </ul>
+    </nav>
+  
+
+    <section class="about" id="myabout">
+          <div class="max-width"> 
+             <h2 class="title">About us</h2>
+            <div class="about-content">
+               <div class="column left">
+                 <img class="about-content" src="../Image/1.png" alt="">
+               </div> 
+                <div class="column right">
+                 <div class="text">In this website,you can <span class="side">Donate</span></div>
+                 <p>In this website you can donate food and request food , The food only for who suffers more without food by our food guard organisation.
+                   </p>
+                 </p>
+                 <a href="../port/certificateorg.html">more details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script> 
+          var typed = new Typed(".side", {
+            strings : ["Donate Food","Donate Food","Request Food."],
+            typespeed:10,
+            backspeed:10,
+            loop:true
+          });
+          </script>
+       
+      </section> 
+    
+</body>
+</html>
